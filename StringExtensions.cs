@@ -4,9 +4,9 @@ namespace SkyExtensions;
 
 public static class StringExtensions
 {
-    public static void RemoveWhitespaces(this string var)
+    public static string RemoveWhitespaces(this string var)
     {
-        var = Regex.Replace(var, @"\s+", "");
+        return var = Regex.Replace(var, @"\s+", "");
     }
 
     public static int ToInt(this string theValue, int? DefaultValue = 0)
